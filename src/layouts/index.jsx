@@ -8,6 +8,7 @@ import '../styles/global.scss';
 
 import styles from './index.module.scss';
 import Header from '../components/ui/Header';
+import Footer from '../components/ui/Footer';
 
 const Layout = ({ children, data }) => (
   <div className={styles.root}>
@@ -20,6 +21,7 @@ const Layout = ({ children, data }) => (
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <Fragment>{children()}</Fragment>
+    <Footer siteName={data.site.siteMetadata.title} />
   </div>
 );
 

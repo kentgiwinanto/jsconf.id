@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 
 import styles from './Header.module.scss';
 
+/** @type {React.SFC} */
 const Header = () => (
   <header className={styles.root}>
     <div className={styles.inner}>
