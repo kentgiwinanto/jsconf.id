@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.root {
+  .rectangle {
+    fill: $color-jakartajs-red;
+  }
+
+  .shape {
+    fill: $white;
+  }
+}
+
+.transparent {
+  .rectangle {
+    fill: transparent;
+  }
+
+  &.foreground-red {
+    .shape {
+      fill: $color-jakartajs-red;
+    }
+  }
+
+  &.foreground-white {
+    .shape {
+      fill: $white;
+    }
+  }
+}

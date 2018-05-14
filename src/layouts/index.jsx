@@ -9,6 +9,7 @@ import '../styles/global.scss';
 import styles from './index.module.scss';
 import Header from '../components/ui/Header';
 import Footer from '../components/ui/Footer';
+import SectionHeading from '../components/ui/SectionHeading';
 
 const Layout = ({ children, data }) => (
   <div className={styles.root}>
@@ -21,6 +22,10 @@ const Layout = ({ children, data }) => (
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <Fragment>{children()}</Fragment>
+    <div style={{ padding: '2.5rem 1.5rem' }}>
+      <SectionHeading title="Sponsors" color="dark" />
+      <h2>Platinum</h2>
+    </div>
     <Footer siteName={data.site.siteMetadata.title} />
   </div>
 );

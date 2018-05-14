@@ -19,6 +19,14 @@
   height: 100%;
 }
 
+.headerLink {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  color: $white;
+  text-decoration: none;
+}
+
 .headerNav {
   display: flex;
   flex: 1 1 auto;
